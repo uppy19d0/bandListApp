@@ -1,4 +1,4 @@
-import 'package:BandList/src/models/band.dart';
+import 'package:BandList/models/band.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
