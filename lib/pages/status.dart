@@ -12,6 +12,13 @@ class StatusPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [Text('ServerStatus:${socketService.serverStatus}')],
       )),
+      floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.message),
+          onPressed: () => {
+                print(socketService.serverStatus.index),
+                socketService.emit('emit-message-flutter',
+                    {'name': 'FLuter client', 'message': 'Hello of mobile'}),
+              }),
     );
   }
 }
